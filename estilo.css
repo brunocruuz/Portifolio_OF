@@ -41,8 +41,8 @@ header
      position: fixed;
      z-index: 1;
     padding: 1.43em;
-    max-width: 1200px;
-    width: 100%;
+    max-width: 1300px;
+    width: 1300px;
     font-size: 1.5em;
     font-weight: bold;
     grid-area: header;   
