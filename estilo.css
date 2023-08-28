@@ -101,8 +101,8 @@ header ul li a:hover{
  #section1 img {
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.281) 4px 5px 8px 7px;
-    width: 70%;
-    margin-left: 15%;
+    width: 50%;
+    margin-left: 25%;
     
  }
  .container-img-texto ul li
@@ -127,7 +127,7 @@ header ul li a:hover{
      
     display: flex;
     font-size: 2rem;
-    padding: 20px 0 20px 45px;
+    padding: 10px 0 20px 45px;
     gap: 40px;
  }
  .sociais a{
@@ -138,12 +138,10 @@ header ul li a:hover{
  {
     font-size: 3.5rem;
  }
- .linkedin  a:hover{
-   font-size: 3.5rem;
+ .linkedin  a:hover{  
    color: #0a66c2;
  }
  .zap a:hover{
-    font-size: 3.5rem;
     color: #0dc143;
  }
  .insta a:hover{
