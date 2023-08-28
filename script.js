@@ -13,3 +13,16 @@ sr.reveal('.efeitoScrollReveal_Efeito2',{
     rotate: {x:50, y:50, z:0},
     duration: 1500
 })
+
+
+
+ /* FUNÇÃO QUE ATIVA UM BACKGROUND QUANDO A ROLAGEM DO SCROLL É ACIONADA */ 
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 0) {    /*Se scroll rolar */ 
+      header.classList.add("scrolled");  /* colocar background determinado no css*/
+    } else {
+      header.classList.remove("scrolled"); /*se não, ignora a classe scrolled*/ 
+    }
+  });
+  

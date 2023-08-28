@@ -31,6 +31,10 @@ body
 }
 
                  /* SESSÃO HEADER */ 
+header.scrolled {
+    background: linear-gradient(45deg, rgba(43, 72, 106, 0.911), white) ;
+   
+}                
 
 header
 {
@@ -42,6 +46,7 @@ header
     font-size: 1.5em;
     font-weight: bold;
     grid-area: header;   
+    transition: background-color 0.3s ease-in-out;
 
 }            
 
