@@ -3,31 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
      <link rel="stylesheet" href="estilo.css">
+     
+   
     <title>Meu Portfolio</title>
 </head>
 <body>
     <header id="header">
-        <nav>
+        <nav id="container-menu">
+            <a href="#"></a>
              <ul>
-                <li><a href="#header">Inicio</a> </li>
+                
                 <li> <a href="#section1">Quem sou</a> </li>
                 <li><a href="#projetos">Meus Projetos</a> </li>
                 <li><a href="#footer">Contatos</a>  </li>
              </ul>
         </nav>
-    </header>
-    <section id="section1">
-      imagem 
+    </header> 
+                <!-- Section Imagem e Texto -->
+    <section id="section1" >
+       <img src="_img/bruno_social.jpeg" alt="Imagem Bruno Cruz" class="efeitoScrollReveal_Efeito2">  
+       <div class="container-img-texto">
+            <ul>
+                <li> Nome:<span class="formatacao-texto"> Bruno Amador da Cruz </span></li>
+                <li>Idade: <span class="formatacao-texto"> 30 Anos</span> </li>
+               <li> Nascimento: <span class="formatacao-texto"> 23/03/1993</p> </li>
+                <li>Cidade/ UF: <span class="formatacao-texto">Belém / PA</span></li>
+                <li>Dev: <span class="formatacao-texto">Developer Junior Front-End</span></li>
+            </ul>
+            <ul class="sociais">
+                <li class="linkedin"><a href="https://www.linkedin.com/in/bruno-cruz-9b9415217/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+
+                <li class="zap"><a href="https://wa.me/5591988079891" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+
+                <li class="insta"><a href="https://www.instagram.com/bruno_cruuz/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+       </div>
     </section>
-    <section id="section2"git push --force>
-        texto
+                <!-- Section Fotos -->
+    <section id="section2">
+         <h1>Um pouco sobre mim.</h1>
+         <h3> Olá, me chamo Bruno Amador da Cruz, nascido em 23/03/1993 atualmente tenho 30 anos , por 5 anos fui motorista urbano na minha cidade e desde que conheci a área da programação estou cursando Analise de Desenvolvimento de Sistemas na faculdade Estácio para fazer essa transição de carreira, me dedicando ao máximo para alcançar conhecimento suficiente para entrar na área com confiança para solucionar problemas e acrescentar inovação tecnológica. 
+
+            Tenho facilidade em me relacionar com pessoas em ambiente de trabalho, respeitando hierarquias e interesses pessoais de cada individuo, procurando sempre aprender, ajudar e evolui como pessoa. 
+           
+           Adquiri bastante conhecimento em HTML e CSS3, @media query, responsividade bootstrap tendo total capacidade para criar um site estático com esses conhecimentos. Buscando cada vez mais conhecimento e me atualizando na medida em que vou evoluindo</h3>
     </section>
+                <!-- Section Projetos -->
     <div id="projetos">
-        div projetos
+        <div class="container-projetos ">
+            <div class="row efeitoScrollReveal">card1</div>
+            <div class="row efeitoScrollReveal">card1</div>
+            <div class="row efeitoScrollReveal">card1</div>
+            <div class="row efeitoScrollReveal">card1</div>
+        </div>
+    </div>
+                 <!-- FIM da Section Projetos -->
+    <div id="mensagem">
+        <h1 class="efeitoScrollReveal">SEJA UM ÓTIMO PROGRAMADOR</h1>
     </div>
     <footer id="footer">
-        footer da page
+       
     </footer>
+    <script src="script.js"></script>
+    
 </body>
 </html>
