@@ -21,6 +21,8 @@ window.addEventListener("scroll", function() {
     const header = document.querySelector("header");
     if (window.scrollY > 0) {    /*Se scroll rolar */ 
       header.classList.add("scrolled");  /* colocar background determinado no css*/
+      header.style.transition = "transform 1s"; 
+      header.style.transform = "rotate(360deg)"; 
     } else {
       header.classList.remove("scrolled"); /*se não, ignora a classe scrolled*/ 
     }
