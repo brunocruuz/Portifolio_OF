@@ -94,8 +94,8 @@ header ul li a:hover{
     background: linear-gradient(45deg, rgba(43, 72, 106, 0.911), white) ;
     grid-area: section1;
     height: 100vh;
-    margin-top: 6em;
-    padding-top: 6rem;
+    margin-top: 5em;
+    padding-top: 9rem;
  }
  #section1 img {
     border-radius: 50%;
@@ -123,7 +123,7 @@ header ul li a:hover{
  }
  .sociais
  {
-     
+
     display: flex;
     font-size: 2rem;
     padding: 10px 0 20px 45px;
@@ -149,8 +149,8 @@ header ul li a:hover{
                 /* SESSÃO TEXTO SOBRE MIM  */ 
 #section2
 {
-    margin-top: 6em;
-    padding-top: 6rem ;
+    margin-top: 5em;
+    padding-top: 9rem ;
     grid-area: section2;
    background: linear-gradient(45deg, rgba(43, 72, 106, 0.486), white) ;
    text-align:justify;
@@ -214,7 +214,7 @@ footer {
 
 
                         /* Media Queres */ 
-@media (min-width: 200px) and (max-width:600.98px)
+                @media (min-width: 200px) and (max-width:767.98px)
 {
     body{
     display: grid;
@@ -232,9 +232,23 @@ footer {
          padding: 0;
          height: 50rem;
     }
-    .container-img-texto
+    #section1 img 
     {
-        margin: 0;
+        margin-top: 2rem;
+    }
+    .container-img-texto 
+    {
+        margin: 0;    
+    }
+    .bio-perfil
+    { 
+      margin: -15px 0  0 -10px;
+      padding: 0;
+      font-size: 1.5rem;
+    }
+    .formatacao-texto
+    {
+        font-size: 1.5rem;
     }
     .sociais 
     {
@@ -253,33 +267,95 @@ footer {
     {
         height: 105rem;
         padding: 5px;
-       
     } 
  
     /* QUERES DE MENSAGEM */ 
     #mensagem
-    {
-        
+    { 
         padding: 0;
     }
     #mensagem h1
     {
         line-height: 5rem;
         height: 150px;
-        
     }
      /* QUERES DE FOOTER */
      #footer
-     {
-        
+     {  
         margin-top: 10px;
         padding: 0;
         height: 50vh;
      } 
 }
-@media (min-width: 768px) and (max-width:991.98px)
+                @media (min-width: 768px) and (max-width:991.98px)
 {
-    
+    body{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        'header header header'
+        'section1 section1 section1'
+        'projetos projetos projetos'
+        'mensagem mensagem mensagem'
+        'footer footer footer ';
+        }
+        #container-menu {
+            display: none;
+            
+        }
+        #section1 
+        { 
+             margin-top:0;
+             padding: 0;
+             height: 50rem;
+        }
+        #section1 img 
+        {
+            margin-top: 2rem;
+            width: 250px;
+            margin: 2rem 0 0 18rem;
+        }
+        .container-img-texto
+        {
+            margin: 0;
+            border: #f301b9 1px solid;
+        }
+        .sociais 
+        {
+            padding: 0;
+        }
+        .sociais li
+        {
+            margin: 0 auto;
+        }
+        #section2
+        {
+            display: none;
+        }
+        /* QUERES DE PROJETOS  */
+        #projetos
+        {
+            height: 105rem;
+            padding: 5px;
+        } 
+     
+        /* QUERES DE MENSAGEM */ 
+        #mensagem
+        { 
+            padding: 0;
+        }
+        #mensagem h1
+        {
+            line-height: 5rem;
+            height: 150px;
+        }
+         /* QUERES DE FOOTER */
+         #footer
+         {  
+            margin-top: 10px;
+            padding: 0;
+            height: 50vh;
+         } 
  
 }
 @media (min-width: 992px) and (max-width:1199.98px)
@@ -290,4 +366,3 @@ footer {
 {
  
 }
-/* 974*/ 
