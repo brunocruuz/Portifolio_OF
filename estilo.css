@@ -123,7 +123,6 @@ header ul li a:hover{
  }
  .sociais
  {
-
     display: flex;
     font-size: 2rem;
     padding: 10px 0 20px 45px;
@@ -135,17 +134,38 @@ header ul li a:hover{
  }
  .sociais a:hover
  {
-    font-size: 3.5rem;
+     transition: 0.5s;
  }
  .linkedin  a:hover{  
    color: #0a66c2;
+   transform: scale(2.5); /* Efeito para aumentar*/
+   display: block; /* transform só funciona com display block */
  }
  .zap a:hover{
     color: #0dc143;
+    transform: scale(2.5);
+    display: block;
  }
  .insta a:hover{
     color: #f301b9;
+    transform: scale(2.5);
+    display: block;
  }
+                /*footer sociais */ 
+
+.sociais_footer
+{
+    list-style: none;
+}               
+.sociais_footer .zap a{
+  color: #0dc143;
+}
+.sociais_footer .insta a{
+    color: #f301b9;
+}
+.sociais_footer .linkedin a{
+    color: #0a66c2;
+}
                 /* SESSÃO TEXTO SOBRE MIM  */ 
 #section2
 {
@@ -203,15 +223,21 @@ header ul li a:hover{
     visibility: hidden; /* deixa invisivel, ajuda no efeito Revael, mas não é obrigatorio */
 }  
 
-footer {
-    padding-top: 6rem;
-    height: 20vh;
+footer 
+{    
     max-width: 1500px;
     grid-area: footer;
-    background: linear-gradient(45deg, rgba(43, 72, 106, 0.911), white) ;
-    
+    background: black;
+} 
+#footer-container
+{
+    display: flex;
+    justify-content: space-evenly;
 }
-
+.container-item1
+{
+    color: white;
+}
 
                         /* Media Queres */ 
                 @media (min-width: 200px) and (max-width:767.98px)
@@ -258,6 +284,18 @@ footer {
     {
         margin: 0 auto;
     }
+    .linkedin a
+    {
+        color: #15497d;
+    }
+    .zap a 
+    {
+        color: #10cf4a;
+    }
+    .insta a
+    {
+        color: #f301b9;
+    }
     #section2
     {
         display: none;
@@ -286,6 +324,7 @@ footer {
         padding: 0;
         height: 50vh;
      } 
+   
 }
                 @media (min-width: 768px) and (max-width:991.98px)
 {
