@@ -87,7 +87,7 @@ header ul li a:hover {
   background: linear-gradient(45deg, rgba(43, 72, 106, 0.911), white);
   grid-area: section1;
   height: auto;
-  
+
   margin-top: 5em;
   padding-top: 9rem;
 }
@@ -181,17 +181,16 @@ header ul li a:hover {
   width: 860px;
   border-radius: 20px;
   overflow: hidden;
- 
- /* position: absolute;  */ 
+
+  /* position: absolute;  */
 }
 .navegacao {
   position: absolute;
- /* top: 60%;    por algum movito da conflito no github esse formato 
+  /* top: 60%;    por algum movito da conflito no github esse formato 
   left: 50%; */
   display: flex;
-    top: 75%;
-    left: 55%;
-    
+  top: 75%;
+  left: 55%;
 }
 .bar {
   width: 100px;
@@ -232,8 +231,9 @@ header ul li a:hover {
   margin-left: -66.6%;
 }
 /* SESSÃO PROJETOS */
+
 #projetos {
-  padding-top: 6rem;
+  padding-top: 10rem;
   grid-area: projetos;
   height: 100vh;
 }
@@ -241,15 +241,29 @@ header ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  gap: 3rem;
   justify-content: space-evenly;
 }
 .row {
-  background: linear-gradient(45deg, rgba(43, 72, 106, 0.486), white);
+ /* background: linear-gradient(45deg, rgba(43, 72, 106, 0.486), white); */
   margin-top: 10px;
   align-items: center;
-  width: 350px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
+  overflow: hidden;
 }
+.row img {
+  width: 100%;
+  height: 100%;
+  transition: .4s all ease-in-out;
+  overflow: hidden;
+   
+}
+.row img:hover {
+  cursor: pointer;
+  transform: scale(1.4) rotate(5deg);
+}
+
 /*SESSÇÃO CONTAINER MENSAGEM  */
 #mensagem {
   grid-area: mensagem;
