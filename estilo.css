@@ -236,6 +236,7 @@ header ul li a:hover {
   padding-top: 10rem;
   grid-area: projetos;
   height: 100vh;
+  
 }
 .container-projetos {
   display: flex;
@@ -248,9 +249,10 @@ header ul li a:hover {
  /* background: linear-gradient(45deg, rgba(43, 72, 106, 0.486), white); */
   margin-top: 10px;
   align-items: center;
-  width: 420px;
+  width: 420px;/* 420 */ 
   height: 420px;
   overflow: hidden;
+ 
 }
 .row img {
   width: 100%;
@@ -263,7 +265,10 @@ header ul li a:hover {
   cursor: pointer;
   transform: scale(1.4) rotate(5deg);
 }
-
+.f1 img:hover{
+  cursor: pointer;
+  transform: scale(1.4) rotate(-5deg);
+}
 /*SESSÇÃO CONTAINER MENSAGEM  */
 #mensagem {
   grid-area: mensagem;
@@ -271,6 +276,9 @@ header ul li a:hover {
   display: flex;
   align-items: center;
   padding-top: 6rem;
+  margin-top: 55rem;
+  border: 1px solid red;
+   
 }
 #mensagem h1,
 #projetos h1 {
