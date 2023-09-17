@@ -86,7 +86,8 @@ header ul li a:hover {
 #section1 {
   background: linear-gradient(45deg, rgba(43, 72, 106, 0.911), white);
   grid-area: section1;
-  height: 100vh;
+  height: auto;
+  
   margin-top: 5em;
   padding-top: 9rem;
 }
@@ -185,9 +186,12 @@ header ul li a:hover {
 }
 .navegacao {
   position: absolute;
-  top: 60%;
-  left: 50%;
+ /* top: 60%;    por algum movito da conflito no github esse formato 
+  left: 50%; */
   display: flex;
+    top: 75%;
+    left: 55%;
+    
 }
 .bar {
   width: 100px;
