@@ -51,7 +51,7 @@ header ul {
   margin-left: 1em;
   display: flex;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 45px;
 }
 header ul li a {
   position: relative;
@@ -236,12 +236,12 @@ header ul li a:hover {
   padding-top: 10rem;
   grid-area: projetos;
   height: 100vh;
-  
+  overflow: hidden;
 }
 .container-projetos {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction:row;
   gap: 3rem;
   justify-content: space-evenly;
 }
